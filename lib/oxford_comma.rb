@@ -6,6 +6,6 @@ def oxford_comma(array)
       elsif array.length == 3
         "#{array[0...-1].join(', ')}, and #{array.last}"
       else array.length > 3
-        array.to_sentence
+        "#{array[0...-1].join(', ')}, and #{array.last}"
   end
 end
